@@ -107,6 +107,9 @@ img {
   border-radius: 50%;
   border: 2px solid var(--secondary-color);
   max-width: 20%;
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
 }
 
 /* ===== Container ===== */
@@ -423,7 +426,7 @@ footer {
 }
 
 .mt-2 {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .mt-3 {
@@ -499,7 +502,7 @@ footer {
 #contact .animate-fadeInLeft form.card .form-group:nth-child(3),
 #contact .animate-fadeInLeft form.card button {
   grid-column: span 2;
-   transform: translatey(-2px);
+  transform: translatey(-2px);
 }
 
 @media (max-width: 600px) {
@@ -511,7 +514,6 @@ footer {
   #contact .animate-fadeInLeft form.card .form-group:nth-child(3),
   #contact .animate-fadeInLeft form.card button {
     grid-column: span 1;
-   
   }
 }
 
@@ -632,8 +634,8 @@ footer {
 .btn-large {
   padding: 14px 35px;
   font-size: 1.1rem;
-  
-    transform: translatey(15px);
+
+  transform: translatey(15px);
 }
 
 /* Icons using CSS */
@@ -1499,7 +1501,8 @@ footer {
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 40px;
   border-radius: 24px;
-  /* box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); */
+  height:  390px;
+
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   max-width: 550px;
   width: 90%;
@@ -1509,6 +1512,9 @@ footer {
   align-items: center;
   flex-direction: column;
   transition: 0.3s;
+}
+.inventor-card p{
+font-size: 0.9rem;
 }
 
 .inventor-card:hover {
@@ -1560,4 +1566,7 @@ i.fa-solid.fa-phone {
 
 .footer-section.deg h3 {
   color: var(--border-color) !important;
+}
+.flex-Top {
+  display: flex;
 }
