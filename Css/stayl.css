@@ -13,15 +13,17 @@
 
   /* Gradients */
   --gradient-primary: #071329;
-  --gradient-accent: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.03),
-    rgba(255, 255, 255, 0.01)
-  );
+  --gradient-accent: linear-gradient(180deg,
+      rgba(255, 255, 255, 0.03),
+      rgba(255, 255, 255, 0.01));
   --gradient-overlay: linear-gradient(180deg, #4dabf7, #60d394);
-  /* Spacing */
+  /* Spacing - Unified */
   --section-padding: 80px 0;
   --container-padding: 0 20px;
+  --card-padding: 30px;
+  --grid-gap: 30px;
+  --icon-size: 70px;
+  --social-icon-size: 40px;
 
   /* Shadows - Subtle and Premium */
   --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.04);
@@ -106,10 +108,17 @@ img {
 .inventor-card.animate-fadeInUp img {
   border-radius: 50%;
   border: 2px solid var(--secondary-color);
-  max-width: 20%;
-  height: 50px;
-  width: 50px;
+  width: 100%;
+  height: 100%;
+  height: 70px;
+  width: 70px;
   object-fit: cover;
+}
+
+.IMG_STAIL {
+  max-width: 70px;
+  max-height: 70px;
+  border-radius: 50%;
 }
 
 /* ===== Container ===== */
@@ -332,11 +341,11 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .footer-section h3 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-bottom: 20px;
   color: var(--accent-color);
 }
@@ -360,12 +369,12 @@ footer {
 .social-links {
   display: flex;
   gap: 15px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .social-links a {
-  width: 40px;
-  height: 40px;
+  width: var(--social-icon-size);
+  height: var(--social-icon-size);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -411,7 +420,7 @@ footer {
 /* ===== Utility Classes ===== */
 .text-center {
   text-align: center;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .text-gradient {
@@ -426,7 +435,7 @@ footer {
 }
 
 .mt-2 {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .mt-3 {
@@ -473,14 +482,13 @@ footer {
 .card {
   background: #ffffff;
   border-radius: 15px;
-  padding: 30px;
+  padding: var(--card-padding);
   box-shadow: var(--shadow-sm);
   transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   position: relative;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-
   height: 100%;
 }
 
@@ -488,10 +496,9 @@ footer {
 #contact .animate-fadeInLeft form.card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 15px;
-  padding: 25px;
+  gap: 20px;
+  padding: 30px;
   border: 1px solid var(--border-color);
-
   background: var(--light-color);
 }
 
@@ -524,11 +531,9 @@ footer {
   left: 0;
   width: 100%;
   height: 3px;
-  background: linear-gradient(
-    90deg,
-    var(--primary-color),
-    var(--secondary-color)
-  );
+  background: linear-gradient(90deg,
+      var(--primary-color),
+      var(--secondary-color));
   border-radius: 15px 15px 0 0;
 }
 
@@ -538,24 +543,22 @@ footer {
 } */
 
 .card-icon {
-  width: 80px;
-  height: 80px;
+  width: var(--icon-size);
+  height: var(--icon-size);
   margin: 0 auto 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(
-    135deg,
-    var(--dark-color),
-    var(--secondary-color)
-  );
+  background: linear-gradient(135deg,
+      var(--dark-color),
+      var(--secondary-color));
   border-radius: 50%;
   color: white;
   font-size: 2rem;
 }
 
 .card-title {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: var(--dark-color);
   margin-bottom: 15px;
@@ -572,8 +575,8 @@ footer {
 /* Feature Cards */
 .feature-card {
   background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
-  border-radius: 20px;
-  padding: 40px 30px;
+  border-radius: 15px;
+  padding: 30px;
   text-align: center;
   transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   border: 2px solid transparent;
@@ -592,10 +595,11 @@ footer {
 }
 
 /* Buttons */
+/* Buttons */
 .btn {
   display: inline-block;
-  padding: 15px 40px;
-  border-radius: 50px;
+  padding: 15px 35px;
+  border-radius: 10px;
   font-weight: 600;
   font-size: 1.1rem;
   text-align: center;
@@ -608,22 +612,21 @@ footer {
 .btn-primary {
   background: var(--gradient-overlay);
   color: white;
-  border-radius: 8px;
-  padding: 12px 25px;
+  border-radius: 10px;
+  padding: 15px 35px;
   transition: background 0.3s ease;
-  transition: 0.3s;
 }
 
 .btn-primary:hover {
   background: var(--gradient-primary);
-  /* Slightly darker shade of primary */
-  transition: 0.3s;
+  transition: background 0.3s ease;
 }
 
 .btn-secondary {
   background: transparent;
   color: var(--primary-color);
   border: 2px solid var(--primary-color);
+  padding: 13px 33px;
 }
 
 .btn-secondary:hover {
@@ -632,16 +635,15 @@ footer {
 }
 
 .btn-large {
-  padding: 14px 35px;
+  padding: 15px 35px;
   font-size: 1.1rem;
-
   transform: translatey(15px);
 }
 
 /* Icons using CSS */
 .css-icon {
-  width: 60px;
-  height: 60px;
+  width: var(--icon-size);
+  height: var(--icon-size);
   margin: 0 auto;
   position: relative;
 }
@@ -723,8 +725,8 @@ footer {
   height: 30px;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
-  top: 15px;
-  left: 15px;
+    top: 20px;
+    left: 21px;
 }
 
 /* Mobile App Icon */
@@ -776,11 +778,9 @@ footer {
   position: absolute;
   width: 60%;
   height: 4px;
-  background: linear-gradient(
-    90deg,
-    var(--primary-color),
-    var(--secondary-color)
-  );
+  background: linear-gradient(90deg,
+      var(--primary-color),
+      var(--secondary-color));
   bottom: -10px;
   left: 20%;
   border-radius: 2px;
@@ -798,21 +798,21 @@ footer {
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: var(--grid-gap);
   align-items: stretch;
 }
 
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: var(--grid-gap);
   align-items: stretch;
 }
 
 .grid-4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: var(--grid-gap);
   align-items: stretch;
 }
 
@@ -827,6 +827,7 @@ footer {
 }
 
 @media (max-width: 768px) {
+
   .grid-2,
   .grid-3,
   .grid-4 {
@@ -891,11 +892,9 @@ footer {
 .stat-number {
   font-size: 3rem;
   font-weight: 800;
-  background: linear-gradient(
-    135deg,
-    var(--primary-color),
-    var(--secondary-color)
-  );
+  background: linear-gradient(135deg,
+      var(--primary-color),
+      var(--secondary-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -920,11 +919,9 @@ footer {
   right: 50%;
   width: 4px;
   height: 100%;
-  background: linear-gradient(
-    180deg,
-    var(--primary-color),
-    var(--secondary-color)
-  );
+  background: linear-gradient(180deg,
+      var(--primary-color),
+      var(--secondary-color));
   border-radius: 2px;
 }
 
@@ -961,11 +958,9 @@ footer {
   transform: translateX(40%);
   width: 50px;
   height: 50px;
-  background: linear-gradient(
-    135deg,
-    var(--primary-color),
-    var(--secondary-color)
-  );
+  background: linear-gradient(135deg,
+      var(--primary-color),
+      var(--secondary-color));
   border: 4px solid white;
   border-radius: 50%;
   box-shadow: 0 0 0 4px rgba(30, 144, 255, 0.15);
@@ -983,20 +978,18 @@ footer {
 
 /* Timeline Icon inside content */
 .timeline-icon {
-  width: 60px;
-  height: 60px;
+  width: var(--icon-size);
+  height: var(--icon-size);
   margin: 0 auto 15px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(
-    135deg,
-    var(--primary-color),
-    var(--secondary-color)
-  );
+  background: linear-gradient(135deg,
+      var(--primary-color),
+      var(--secondary-color));
   border-radius: 50%;
   color: white;
-  font-size: 1.8rem;
+  font-size: 2rem;
   box-shadow: var(--shadow-sm);
 }
 
@@ -1101,6 +1094,7 @@ footer {
 }
 
 @keyframes pulse {
+
   0%,
   100% {
     transform: scale(1);
@@ -1157,6 +1151,7 @@ footer {
 
 /* Bounce Animation */
 @keyframes bounce {
+
   0%,
   20%,
   50%,
@@ -1176,6 +1171,7 @@ footer {
 
 /* Glow Animation */
 @keyframes glow {
+
   0%,
   100% {
     box-shadow:
@@ -1204,6 +1200,7 @@ footer {
 
 /* Float Animation */
 @keyframes float {
+
   0%,
   100% {
     transform: translateY(0);
@@ -1349,12 +1346,10 @@ footer {
 
 /* Gradient Background Animation */
 .gradient-animated {
-  background: linear-gradient(
-    270deg,
-    var(--primary-color),
-    var(--secondary-color),
-    #667eea
-  );
+  background: linear-gradient(270deg,
+      var(--primary-color),
+      var(--secondary-color),
+      #667eea);
   background-size: 600% 600%;
   animation: gradientShift 10s ease infinite;
 }
@@ -1371,12 +1366,10 @@ footer {
 
 /* Shimmer Effect */
 .shimmer {
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.3) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.3) 50%,
+      rgba(255, 255, 255, 0) 100%);
   background-size: 200% 100%;
   animation: shimmer 2s infinite;
 }
@@ -1499,10 +1492,9 @@ footer {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 40px;
-  border-radius: 24px;
-  height:  390px;
-
+  padding: 35px;
+  border-radius: 20px;
+  height: 380px;
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   max-width: 550px;
   width: 90%;
@@ -1511,10 +1503,10 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  transition: 0.3s;
 }
-.inventor-card p{
-font-size: 0.9rem;
+
+.inventor-card p {
+  font-size: 0.9rem;
 }
 
 .inventor-card:hover {
@@ -1567,6 +1559,14 @@ i.fa-solid.fa-phone {
 .footer-section.deg h3 {
   color: var(--border-color) !important;
 }
+
 .flex-Top {
   display: flex;
+}
+
+@media (max-width: 767px) {
+  .flex-Top {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
