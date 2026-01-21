@@ -68,7 +68,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
   box-shadow: inset 0 0 6px var(--dark-color);
-  background-color: var(--dark-color);
+  background-color: var(--gradient-primary);
 }
 
 ::-webkit-scrollbar-track {
@@ -212,8 +212,8 @@ header {
 }
 
 .nav-links a:hover {
-  background: var(--secondary-color);
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  background: var(--dark-color);
+  box-shadow: 0 0 12px var(--secondary-color);
 }
 
 .nav-links .fa-magnifying-glass {
@@ -285,7 +285,7 @@ header {
 }
 
 .hero-content h1 {
-  font-size: clamp(2rem, 5vw, 4rem);
+  font-size: 3rem;
   font-weight: 800;
   margin-bottom: 20px;
   text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
@@ -293,7 +293,7 @@ header {
 }
 
 .hero-content p {
-  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-size: 1.3rem;
   margin-bottom: 30px;
   max-width: 700px;
   margin-left: auto;
@@ -423,7 +423,7 @@ footer {
 }
 
 .mt-2 {
-  margin-top: 20px;
+    margin-top: 10px;
 }
 
 .mt-3 {
@@ -477,7 +477,7 @@ footer {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+
   height: 100%;
 }
 
@@ -499,6 +499,7 @@ footer {
 #contact .animate-fadeInLeft form.card .form-group:nth-child(3),
 #contact .animate-fadeInLeft form.card button {
   grid-column: span 2;
+   transform: translatey(-2px);
 }
 
 @media (max-width: 600px) {
@@ -510,6 +511,7 @@ footer {
   #contact .animate-fadeInLeft form.card .form-group:nth-child(3),
   #contact .animate-fadeInLeft form.card button {
     grid-column: span 1;
+   
   }
 }
 
@@ -630,6 +632,8 @@ footer {
 .btn-large {
   padding: 14px 35px;
   font-size: 1.1rem;
+  
+    transform: translatey(15px);
 }
 
 /* Icons using CSS */
@@ -1504,13 +1508,15 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  transition: 0.3s;
 }
 
 .inventor-card:hover {
-  transform: translateY(-10px);
-  /* box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6); */
-  border-color: var(--secondary-color);
-  background: var(--border-color);
+  transform: translateY(-2px);
+  transition: 0.3s;
+
+  border-color: var(--border-color);
+  background: var(--bg-light);
 }
 
 .flex-center {
