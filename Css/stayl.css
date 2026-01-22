@@ -20,9 +20,9 @@
   /* Spacing - Unified */
   --section-padding: 50px 0;
   --container-padding: 0 20px;
-  --card-padding: 30px;
+  --card-padding: 15px 30px 15px 30px;;
   --grid-gap: 30px;
-  --icon-size: 70px;
+  --icon-size: 60px;
   --social-icon-size: 40px;
 
   /* Shadows - Subtle and Premium */
@@ -78,8 +78,8 @@ body {
 }
 
 ::selection {
-  background-color: var(--dark-color);
-  color: var(--accent-color);
+  background-color: var(--gradient-primary);
+  color: var(--border-color);
 }
 
 a {
@@ -725,8 +725,8 @@ footer {
   height: 30px;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
-    top: 20px;
-    left: 21px;
+    top: 15px;
+    left: 15px;
 }
 
 /* Mobile App Icon */
