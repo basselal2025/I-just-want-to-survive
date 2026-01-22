@@ -20,9 +20,9 @@
   );
   --gradient-overlay: linear-gradient(180deg, #4dabf7, #60d394);
   /* Spacing - Unified */
-  --section-padding: 50px 0;
+  --section-padding: 50px 0 55px 0;
   --container-padding: 0 20px;
-  --card-padding: 15px 30px 15px 30px;
+  --card-padding: 30px;
   --grid-gap: 30px;
   --icon-size: 60px;
   --social-icon-size: 40px;
@@ -156,14 +156,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   min-height: 70px;
-
   border-radius: 50px;
 }
 
 .logo-wrapper {
-  height: 100px;
+  height: 75px;
   width: 100px;
   transition: var(--transition-normal);
 }
@@ -281,7 +279,7 @@ header {
 .hero-section::before {
   content: "";
   position: absolute;
-  top: 47%;
+  top: 50%;
   left: 0;
   width: 100%;
   height: 38%;
@@ -485,7 +483,6 @@ footer {
   background: #ffffff;
   border-radius: 15px;
   padding: var(--card-padding);
-
   position: relative;
   overflow: hidden;
   display: flex;
@@ -497,9 +494,8 @@ footer {
 #contact .animate-fadeInLeft form.card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 5px;
   padding: 30px;
-
   background: var(--light-color);
 }
 
@@ -525,21 +521,6 @@ footer {
   }
 }
 
-.card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background: linear-gradient(
-    90deg,
-    var(--primary-color),
-    var(--secondary-color)
-  );
-  border-radius: 15px 15px 0 0;
-}
-
 /* .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 40px rgba(30, 144, 255, 0.2);
@@ -548,7 +529,7 @@ footer {
 .card-icon {
   width: var(--icon-size);
   height: var(--icon-size);
-  margin: 0 auto 15px;
+  margin: 5px auto 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -559,7 +540,7 @@ footer {
   );
   border-radius: 50%;
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .card-title {
@@ -584,7 +565,6 @@ footer {
   padding: 30px;
   text-align: center;
   transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-
   box-shadow: var(--shadow-sm);
   height: 100%;
   display: flex;
@@ -599,7 +579,6 @@ footer {
   box-shadow: var(--shadow-md);
 }
 
-/* Buttons */
 /* Buttons */
 .btn {
   display: inline-block;
@@ -642,7 +621,6 @@ footer {
 .btn-large {
   padding: 15px 35px;
   font-size: 1.1rem;
-  transform: translatey(50px);
 }
 
 /* Icons using CSS */
@@ -767,13 +745,13 @@ footer {
 .section-header {
   text-align: center;
   margin-bottom: 50px;
+  line-height: 0.9;
 }
 
 .section-title {
   font-size: 2.5rem;
   font-weight: 800;
   color: var(--dark-color);
-  margin-bottom: 15px;
   position: relative;
   display: inline-block;
 }
@@ -791,6 +769,7 @@ footer {
   bottom: -10px;
   left: 20%;
   border-radius: 2px;
+  top: 55px;
 }
 
 .section-subtitle {
@@ -1026,7 +1005,6 @@ footer {
 }
 
 /* Badge */
-
 .badge-outline {
   background: transparent;
   border: 2px solid var(--primary-color);
@@ -1505,7 +1483,6 @@ footer {
   background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-
   padding: 35px;
   border-radius: 20px;
   height: 380px;
@@ -1526,7 +1503,6 @@ footer {
 .inventor-card:hover {
   transform: translateY(-2px);
   transition: 0.3s;
-
   border-color: var(--border-color);
   background: var(--bg-light);
 }
@@ -1583,17 +1559,51 @@ i.fa-solid.fa-phone {
     flex-direction: column;
     gap: 10px;
   }
+
   .hero-content h1 {
     font-size: 1rem;
     padding: 0;
     margin: 0 0 10px 0;
   }
+
   .hero-content p {
     font-size: 0.9rem;
   }
+
   .btn-large {
     font-size: 0.9rem;
     padding: 10px 10px;
     transform: translateY(-25px);
   }
+}
+
+.bottomo {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  background: var(--dark-color);
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: 0.3s;
+  font-weight: 800;
+}
+
+.bottomo:hover {
+  background: var(--gradient-primary);
+  color: #fff;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  appearance: button;
+}
+
+button,
+select {
+  text-transform: none;
 }

@@ -1,519 +1,441 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>نظام الطاقة الشمسية الذكي | IoT & AI</title>
 
-    <!-- CSS Stylesheets -->
-    <link rel="stylesheet" href="Css/stayl.css" />
-    <link rel="stylesheet" href="Css/normalize.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>نظام الطاقة الشمسية الذكي | IoT & AI</title>
 
-    <link rel="stylesheet" href="Css/components.css" />
-    <link rel="stylesheet" href="Css/animations.css" />
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="Css/stayl.css" />
+  <link rel="stylesheet" href="Css/normalize.css" />
+  <link rel="stylesheet" href="Css/components.css" />
+  <link rel="stylesheet" href="Css/animations.css" />
 
-    <!-- Font Awesome & Google Fonts -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <!-- Font Awesome & Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+</head>
 
-  <body class="page-load-fade">
-    <!-- ===== Header ===== -->
-    <header>
-      <div class="layout-container">
-        <div class="site-header">
-          <div class="logo-wrapper">
-            <img src="imge/pngegg.png" alt="شعار النظام" />
+<body class="page-load-fade">
+  <!-- ===== Header ===== -->
+  <header>
+    <div class="layout-container">
+      <div class="site-header">
+        <div class="logo-wrapper">
+          <img src="imge/pngegg.png" alt="شعار النظام" />
+        </div>
+
+        <nav class="nav-links">
+          <div class="logo"></div>
+          <input type="checkbox" id="menuCheckbox" hidden />
+          <label for="menuCheckbox" class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <ul>
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#about">عن المشروع</a></li>
+            <li><a href="#features">المميزات</a></li>
+            <li><a href="#tech">التقنيات</a></li>
+            <li><a href="#contact">تواصل معنا</a></li>
+          </ul>
+
+          <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
           </div>
+        </nav>
+      </div>
+    </div>
+  </header>
 
-          <nav class="nav-links">
-            <div class="logo"></div>
-            <input type="checkbox" id="menuCheckbox" hidden />
-            <label for="menuCheckbox" class="menu-toggle">
-              <i class="fa-solid fa-bars"></i>
-            </label>
-            <ul>
-              <li><a href="#home">الرئيسية</a></li>
-              <li><a href="#about">عن المشروع</a></li>
-              <li><a href="#features">المميزات</a></li>
-              <li><a href="#tech">التقنيات</a></li>
-              <li><a href="#contact">تواصل معنا</a></li>
-            </ul>
-
-            <div class="search-icon">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-          </nav>
+  <main id="home">
+    <!-- ===== Hero Section ===== -->
+    <section class="hero-section">
+      <video class="hero-video" autoplay muted loop>
+        <source src="imge/vodi.mp4" type="video/mp4" />
+        المتصفح لا يدعم تشغيل الفيديو
+      </video>
+      <div class="hero-content">
+        <h1 class="animate-fadeInDown">مستقبل الطاقة بين يديك</h1>
+        <p class="animate-fadeInUp delay-1">
+          نظام متكامل يعتمد على الذكاء الاصطناعي وإنترنت الأشياء لإدارة
+          منظومتك الشمسية بكفاءة قصوى وتوفير مستدام.
+        </p>
+        <div class="hero-buttons animate-fadeInUp delay-2">
+          <a href="https://wa.me/967775432189" target="_blank" class="btn btn-primary btn-large">
+            <i class="fa-solid fa-phone"></i> تواصل معنا الآن
+          </a>
         </div>
       </div>
-    </header>
-    <main id="home">
-      <!-- ===== Hero Section ===== -->
-      <section class="hero-section">
-        <video class="hero-video" autoplay muted loop>
-          <source src="imge/vodi.mp4" type="video/mp4" />
-          المتصفح لا يدعم تشغيل الفيديو
-        </video>
-        <div class="hero-content">
-          <h1 class="animate-fadeInDown">مستقبل الطاقة بين يديك</h1>
-          <p class="animate-fadeInUp delay-1">
-            نظام متكامل يعتمد على الذكاء الاصطناعي وإنترنت الأشياء لإدارة
-            منظومتك الشمسية بكفاءة قصوى وتوفير مستدام.
-          </p>
-          <div class="hero-buttons animate-fadeInUp delay-2">
-            <a
-              href="https://wa.me/967775432189"
-              target="_blank"
-              class="btn btn-primary btn-large"
-            >
-              <i class="fa-solid fa-phone"></i> تواصل معنا الآن
-            </a>
-          </div>
-        </div>
-      </section>
+    </section>
 
-      <!-- ===== Executive Summary Section ===== -->
-      <section id="about">
-        <div class="layout-container">
-          <div class="section-header">
-            <h2 class="section-title">ما سنقدمة لك</h2>
-    
-          </div>
-
-          <div class="grid-3">
-            <!-- Card 1 -->
-            <div class="card stagger-item hover-lift">
-              <div class="card-icon">
-                <i class="fa-solid fa-brain"></i>
-              </div>
-              <h3 class="card-title">ذكاء اصطناعي متقدم</h3>
-              <p class="card-description">
-                نظام ذكي يعتمد على تقنيات IoT والذكاء الاصطناعي لإدارة منظومات
-                الطاقة الشمسية بكفاءة عالية
-              </p>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="card stagger-item hover-lift">
-              <div class="card-icon">
-                <i class="fa-solid fa-database"></i>
-              </div>
-              <h3 class="card-title">جمع وتحليل البيانات</h3>
-              <p class="card-description">
-                جمع بيانات حية من الحساسات (الإضاءة، الحرارة، الرطوبة، الفولت)
-                مع بيانات الطقس الخارجية بنظام انترنت الاشياء
-              </p>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="card stagger-item hover-lift">
-              <div class="card-icon">
-                <i class="fa-solid fa-chart-line"></i>
-              </div>
-              <h3 class="card-title">نمذجة تنبؤية دقيقة</h3>
-              <p class="card-description">
-                معالجة البيانات لاتخاذ قرارات تشغيلية ذكية وتوقعات دقيقة لأفضل
-                استفادة من الطاقة المتاحة
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ===== Core Goals Section ===== -->
-      <section>
-        <div class="layout-container">
-          <div class="section-header">
-            <h2 class="section-title">الأهداف الرئيسية</h2>
-          </div>
-
-          <div class="grid-4">
-            <div class="feature-card stagger-item">
-              <div class="card-icon"><i class="fa-solid fa-sun"></i></div>
-              <h3>تحسين الإنتاج</h3>
-              <p>
-                زيادة كفاءة التوليد عبر إدارة توجيه الألواح (Solar Tracking)
-                بدقة.
-              </p>
-            </div>
-            <div class="feature-card stagger-item">
-              <div class="card-icon"><i class="fa-solid fa-bolt"></i></div>
-              <h3>إدارة الأحمال</h3>
-              <p>
-                توقع قدرة النظام واتخاذ قرارات ذكية لتشغيل أو تأجيل الأحمال
-                الكبيرة.
-              </p>
-            </div>
-            <div class="feature-card stagger-item">
-              <div class="card-icon">
-                <i class="fa-solid fa-mobile-screen"></i>
-              </div>
-              <h3>مراقبة كاملة</h3>
-              <p>
-                عرض معلومات مفهومة (حالة الشحن، التنبؤات) عبر تطبيق جوال سهل.
-              </p>
-            </div>
-            <div class="feature-card stagger-item">
-              <div class="card-icon">
-                <i class="fa-solid fa-shield-halved"></i>
-              </div>
-              <h3>موثوقية النظام</h3>
-              <p>
-                تقليل الاعتماد على الشبكة العامة وزيادة استقرار المنظومة الخاصة.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ===== Components Section ===== -->
-      <section id="tech">
-        <div class="layout-container">
-          <div class="section-header">
-            <h2 class="section-title">المكونات والتقنيات</h2>
-          </div>
-
-          <div class="grid-3">
-            <div class="card">
-              <div class="css-icon icon-iot mb-2"></div>
-              <h3 class="text-center">الأجهزة الطرفية (IoT)</h3>
-              <ul class="mt-2">
-                <li>
-                  <i class="fa-solid fa-check text-secondary"></i> حساسات شدة
-                  الإضاءة (LDR)
-                </li>
-                <li>
-                  <i class="fa-solid fa-check text-secondary"></i> حساسات
-                  الحرارة (DHT11)
-                </li>
-                <li>
-                  <i class="fa-solid fa-check text-secondary"></i> وحدة ESP8266
-                  والـ Servo
-                </li>
-              </ul>
-            </div>
-            <div class="card">
-              <div class="css-icon icon-ai mb-2"></div>
-              <h3 class="text-center">الخادم والمعالجة</h3>
-              <ul class="mt-2">
-                <li>
-                  <i class="fa-solid fa-check text-secondary"></i> خادم سحابي
-                  لتخزين البيانات
-                </li>
-                <li>
-                  <i class="fa-solid fa-check text-secondary"></i> نماذج ذكاء
-                  اصطناعي تنبؤية
-                </li>
-                <li>
-                  <i class="fa-solid fa-check text-secondary"></i> ربط مع API
-                  طقس عالمي
-                </li>
-              </ul>
-            </div>
-            <div class="card">
-              <div class="css-icon icon-mobile mb-2"></div>
-              <h3 class="text-center">واجهة المستخدم</h3>
-              <ul class="mt-2">
-                <li>
-                  <i class="fa-solid fa-check text-secondary"></i> تطبيق فلاتر
-                  (Flutter)
-                </li>
-                <li>
-                  <i class="fa-solid fa-check text-secondary"></i> رسوم بيانية
-                  تفاعلية
-                </li>
-                <li>
-                  <i class="fa-solid fa-check text-secondary"></i> تنبيهات وقت
-                  حقيقي
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ===== Data Flow Section ===== -->
-      <section>
-        <div class="layout-container">
-          <div class="section-header">
-            <h2 class="section-title">آلية عمل النظام</h2>
-            <p class="section-subtitle">
-              رحلة البيانات من الحساسات إلى القرارات الذكية
-            </p>
-          </div>
-
-          <div class="grid-4">
-            <div class="card stagger-item hover-lift">
-              <h3>1. جمع البيانات</h3>
-              <p>
-                الحساسات تقرأ المعطيات (فولطية، تيار، حرارة، إضاءة) دورياً
-                وترسلها لوحدة الإرسال.
-              </p>
-            </div>
-
-            <div class="card stagger-item hover-lift">
-              <h3>2. الإرسال السحابي</h3>
-              <p>
-                وحدة ESP8266 تبعث البيانات عبر الإنترنت إلى الخادم السحابي
-                للمعالجة.
-              </p>
-            </div>
-
-            <div class="card stagger-item hover-lift">
-              <h3>3. المعالجة والذكاء</h3>
-              <p>
-                تصفية البيانات، استدعاء بيانات الطقس، وحساب قدرة الشحن المتوقعة
-                (SOC).
-              </p>
-            </div>
-
-            <div class="card stagger-item hover-lift">
-              <h3>4. اتخاذ القرار</h3>
-              <p>
-                تفعيل متعقب الشمس، إرسال أوامر للأحمال، وعرض التنبؤات للمستخدم.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ===== Contact Section ===== -->
-      <section id="contact">
-        <div class="layout-container">
-          <div class="section-header">
-            <h2 class="section-title">تواصل معنا</h2>
-            <p class="section-subtitle">
-              هل أنت مهتم بتطبيق هذا النظام في منزلك؟ نحن هنا للمساعدة.
-            </p>
-          </div>
-
-          <div class="grid-2">
-            <div class="animate-fadeInRight">
-              <div class="card">
-                <h3>بيانات التواصل</h3>
-                <ul class="mt-3">
-                  <li class="mb-2">
-                    <i class="fa-solid fa-location-dot text-secondary"></i>
-                    اليمن، صنعاء
-                  </li>
-                  <li class="mb-2">
-                    <i class="fa-solid fa-phone text-secondary"></i>+967
-                    775432189
-                  </li>
-                  <li class="mb-2">
-                    <i class="fa-solid fa-envelope text-secondary"></i
-                    >basselal2025@gmail.com
-                  </li>
-                </ul>
-                <div class="social-links">
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                  <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                </div>
-              </div>
-            </div>
-            <div class="animate-fadeInLeft">
-              <form class="card">
-                <div class="form-group">
-                  <input
-                    type="text"
-                    class="form-input"
-                    placeholder="أدخل اسمك هنا"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <input
-                    type="email"
-                    class="form-input"
-                    placeholder="basselal2025@gmail.com"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <textarea
-                    class="form-textarea"
-                    placeholder="كيف يمكننا مساعدتك؟"
-                    required
-                  ></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary btn-large w-full">
-                  إرسال الرسالة
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ===== Inventor Section ===== -->
-      <section class="inventor-section bg-dark text-white py-5">
-        <div class="layout-container">
-          <div class="section-header">
-            <h2 class="section-title text-white">مبتكرين الفكرة</h2>
-          </div>
-          <div class="flex-Top">
-            <div class="flex-center">
-              <div class="inventor-card animate-fadeInUp">
-                <div class="IMG_STAIL">
-                  <img
-                    src="imge/120248342.jfif"
-                    alt="م. غمدان نشوان"
-                    class="inventor-img"
-                  />
-                </div>
-                <div class="inventor-info text-center">
-                  <h2 class="mb-2">
-                    <a href="https://wa.me/967775054212" target="_blank">
-                      م.غمدان نشوان</a
-                    >
-                  </h2>
-                  <p class="text-secondary mb-4">
-                    مهندس برمجيات ومبتكر تقني يمني، رائد في مجال حلول الأنظمة
-                    الذكية والتحول الرقمي. مواقع وتطبيقات ويب حديثة، سريعة،
-                    وقابلة للتوسع باستخدام أحدث تقنيات الويب.
-                  </p>
-                  <div class="social-links justify-center">
-                    <a
-                      href="https://www.barmgely.com/"
-                      target="_blank"
-                      title="GitHub"
-                      ><i class="fa-brands fa-github"></i
-                    ></a>
-                    <a
-                      href="https://www.facebook.com/ghamdanal42/?locale=ca_ES"
-                      target="_blank"
-                      title="LinkedIn"
-                      ><i class="fa-brands fa-facebook"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="flex-center">
-              <div class="inventor-card animate-fadeInUp">
-                <div class="IMG_STAIL">
-                  <img
-                    src="imge/wysd2025_3.jpg"
-                    alt="م. غمدان نشوان"
-                    class="inventor-img"
-                  />
-                </div>
-
-                <div class="inventor-info text-center">
-                  <h2 class="mb-2">
-                    <a href="https://wa.me/967775054212" target="_blank">
-                      م.محمد احمد الزوعري</a
-                    >
-                  </h2>
-                  <p class="text-secondary mb-4">
-                    مختص تكنولوجيا معلومات ومبتكر تقني يمني، أعمل على إدارة
-                    وتطوير الأنظمة التقنية، البنية التحتية الرقمية، وحلول التحول
-                    الرقمي باستخدام أحدث التقنيات.
-                  </p>
-                  <div class="social-links justify-center">
-                    <a
-                      href="https://www.barmgely.com/"
-                      target="_blank"
-                      title="GitHub"
-                      ><i class="fa-brands fa-github"></i
-                    ></a>
-                    <a
-                      href="https://www.facebook.com/ghamdanal42/?locale=ca_ES"
-                      target="_blank"
-                      title="LinkedIn"
-                      ><i class="fa-brands fa-facebook"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="flex-center">
-              <div class="inventor-card animate-fadeInUp">
-                <div class="IMG_STAIL">
-                  <img
-                    src="imge/images.jfif"
-                    alt="م. غمدان نشوان"
-                    class="inventor-img"
-                  />
-                </div>
-
-                <div class="inventor-info text-center">
-                  <h2 class="mb-2">
-                    <a href="https://wa.me/967775054212" target="_blank">
-                      م.هشام قاسم صغير</a
-                    >
-                  </h2>
-                  <p class="text-secondary mb-4">
-                    مهندس برمجيات يمني مختص بتطوير الويب، أعمل على تصميم وبناء
-                    مواقع وتطبيقات ويب حديثة، سريعة، وقابلة للتوسع باستخدام أحدث
-                    تقنيات الويب.
-                  </p>
-                  <div class="social-links justify-center">
-                    <a
-                      href="https://www.barmgely.com/"
-                      target="_blank"
-                      title="GitHub"
-                      ><i class="fa-brands fa-github"></i
-                    ></a>
-                    <a
-                      href="https://www.facebook.com/ghamdanal42/?locale=ca_ES"
-                      target="_blank"
-                      title="LinkedIn"
-                      ><i class="fa-brands fa-facebook"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- ===== Footer ===== -->
-    <footer>
+    <!-- ===== Executive Summary Section ===== -->
+    <section id="about">
       <div class="layout-container">
-        <div class="footer-content">
-          <div class="footer-section deg">
-            <h3>تكنلوجي سولار</h3>
-            <p>
-              نحن نسعى لتوفير طاقة نظيفة ومستقرة لكل منزل في اليمن من خلال دمج
-              التقنيات الحديثة مع حلول الطاقة المستدامة.
+        <div class="section-header">
+          <h2 class="section-title">ما سنقدمة لك</h2>
+        </div>
+
+        <div class="grid-3">
+          <!-- Card 1 -->
+          <div class="card stagger-item hover-lift">
+            <div class="card-icon">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <h3 class="card-title">ذكاء اصطناعي متقدم</h3>
+            <p class="card-description">
+              نظام ذكي يعتمد على تقنيات IoT والذكاء الاصطناعي لإدارة منظومات
+              الطاقة الشمسية بكفاءة عالية
             </p>
           </div>
-          <div class="footer-section deg">
-            <h3>روابط سريعة</h3>
-            <ul>
-              <li><a href="#home">الرئيسية</a></li>
-              <li><a href="#about">عن المشروع</a></li>
-              <li><a href="#tech">التقنيات</a></li>
+
+          <!-- Card 2 -->
+          <div class="card stagger-item hover-lift">
+            <div class="card-icon">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <h3 class="card-title">جمع وتحليل البيانات</h3>
+            <p class="card-description">
+              جمع بيانات حية من الحساسات (الإضاءة، الحرارة، الرطوبة، الفولت)
+              مع بيانات الطقس الخارجية بنظام انترنت الاشياء
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card stagger-item hover-lift">
+            <div class="card-icon">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <h3 class="card-title">نمذجة تنبؤية دقيقة</h3>
+            <p class="card-description">
+              معالجة البيانات لاتخاذ قرارات تشغيلية ذكية وتوقعات دقيقة لأفضل
+              استفادة من الطاقة المتاحة
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Core Goals Section ===== -->
+    <section id="features">
+      <div class="layout-container">
+        <div class="section-header">
+          <h2 class="section-title">الأهداف الرئيسية</h2>
+        </div>
+
+        <div class="grid-4">
+          <div class="feature-card stagger-item">
+            <div class="card-icon"><i class="fa-solid fa-sun"></i></div>
+            <h3>تحسين الإنتاج</h3>
+            <p>
+              زيادة كفاءة التوليد عبر إدارة توجيه الألواح (Solar Tracking)
+              بدقة.
+            </p>
+          </div>
+          <div class="feature-card stagger-item">
+            <div class="card-icon"><i class="fa-solid fa-bolt"></i></div>
+            <h3>إدارة الأحمال</h3>
+            <p>
+              توقع قدرة النظام واتخاذ قرارات ذكية لتشغيل أو تأجيل الأحمال
+              الكبيرة.
+            </p>
+          </div>
+          <div class="feature-card stagger-item">
+            <div class="card-icon">
+              <i class="fa-solid fa-mobile-screen"></i>
+            </div>
+            <h3>مراقبة كاملة</h3>
+            <p>
+              عرض معلومات مفهومة (حالة الشحن، التنبؤات) عبر تطبيق جوال سهل.
+            </p>
+          </div>
+          <div class="feature-card stagger-item">
+            <div class="card-icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h3>موثوقية النظام</h3>
+            <p>
+              تقليل الاعتماد على الشبكة العامة وزيادة استقرار المنظومة الخاصة.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Components Section ===== -->
+    <section id="tech">
+      <div class="layout-container">
+        <div class="section-header">
+          <h2 class="section-title">المكونات والتقنيات</h2>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <div class="css-icon icon-iot mb-2"></div>
+            <h3 class="text-center">الأجهزة الطرفية (IoT)</h3>
+            <ul class="mt-2">
               <li>
-                <a href="http://cloud.barmgely.dev/" target="_blank"
-                  >رابط التطبيق</a
-                >
+                <i class="fa-solid fa-check text-secondary"></i> حساسات شدة
+                الإضاءة (LDR)
+              </li>
+              <li>
+                <i class="fa-solid fa-check text-secondary"></i> حساسات
+                الحرارة (DHT11)
+              </li>
+              <li>
+                <i class="fa-solid fa-check text-secondary"></i> وحدة ESP8266
+                والـ Servo
               </li>
             </ul>
           </div>
-          <div class="footer-section deg">
-            <h3>ساعات العمل</h3>
-            <p>السبت - الخميس: 8:00 ص - 4:00 م</p>
-            <p>الجمعة: مغلق</p>
+          <div class="card">
+            <div class="css-icon icon-ai mb-2"></div>
+            <h3 class="text-center">الخادم والمعالجة</h3>
+            <ul class="mt-2">
+              <li>
+                <i class="fa-solid fa-check text-secondary"></i> خادم سحابي
+                لتخزين البيانات
+              </li>
+              <li>
+                <i class="fa-solid fa-check text-secondary"></i> نماذج ذكاء
+                اصطناعي تنبؤية
+              </li>
+              <li>
+                <i class="fa-solid fa-check text-secondary"></i> ربط مع API
+                طقس عالمي
+              </li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="css-icon icon-mobile mb-2"></div>
+            <h3 class="text-center">واجهة المستخدم</h3>
+            <ul class="mt-2">
+              <li>
+                <i class="fa-solid fa-check text-secondary"></i> تطبيق فلاتر
+                (Flutter)
+              </li>
+              <li>
+                <i class="fa-solid fa-check text-secondary"></i> رسوم بيانية
+                تفاعلية
+              </li>
+              <li>
+                <i class="fa-solid fa-check text-secondary"></i> تنبيهات وقت
+                حقيقي
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="footer-bottom">
-          <p>
-            جميع الحقوق محفوظة &copy; 2026 | تصميم وتنفيذ
-            <span> باسل السعيدي </span>
-          </p>
+      </div>
+    </section>
+
+    <!-- ===== Data Flow Section ===== -->
+    <section>
+      <div class="layout-container">
+        <div class="section-header">
+          <h2 class="section-title">آلية عمل النظام</h2>
+        </div>
+
+        <div class="grid-4">
+          <div class="card stagger-item hover-lift">
+            <h3>1. جمع البيانات</h3>
+            <p>
+              الحساسات تقرأ المعطيات (فولطية، تيار، حرارة، إضاءة) دورياً
+              وترسلها لوحدة الإرسال.
+            </p>
+          </div>
+          <div class="card stagger-item hover-lift">
+            <h3>2. الإرسال السحابي</h3>
+            <p>
+              وحدة ESP8266 تبعث البيانات عبر الإنترنت إلى الخادم السحابي
+              للمعالجة.
+            </p>
+          </div>
+          <div class="card stagger-item hover-lift">
+            <h3>3. المعالجة والذكاء</h3>
+            <p>
+              تصفية البيانات، استدعاء بيانات الطقس، وحساب قدرة الشحن المتوقعة
+              (SOC).
+            </p>
+          </div>
+          <div class="card stagger-item hover-lift">
+            <h3>4. اتخاذ القرار</h3>
+            <p>
+              تفعيل متعقب الشمس، إرسال أوامر للأحمال، وعرض التنبؤات للمستخدم.
+            </p>
+          </div>
         </div>
       </div>
-    </footer>
-  </body>
+    </section>
+
+    <!-- ===== Contact Section ===== -->
+    <section id="contact">
+      <div class="layout-container">
+        <div class="section-header">
+          <h2 class="section-title">تواصل معنا</h2>
+        </div>
+
+        <div class="grid-2">
+          <div class="animate-fadeInRight">
+            <div class="card">
+              <h3>بيانات التواصل</h3>
+              <ul class="mt-3">
+                <li class="mb-2">
+                  <i class="fa-solid fa-location-dot text-secondary"></i>
+                  اليمن، صنعاء
+                </li>
+                <li class="mb-2">
+                  <i class="fa-solid fa-phone text-secondary"></i>+967
+                  775432189
+                </li>
+                <li class="mb-2">
+                  <i class="fa-solid fa-envelope text-secondary"></i>basselal2025@gmail.com
+                </li>
+              </ul>
+              <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="animate-fadeInLeft">
+            <form class="card">
+              <div class="form-group">
+                <input type="text" class="form-input" placeholder="أدخل اسمك هنا" required />
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-input" placeholder="basselal2025@gmail.com" required />
+              </div>
+              <div class="form-group">
+                <textarea class="form-textarea" placeholder="كيف يمكننا مساعدتك؟" required></textarea>
+              </div>
+              <button class="bottomo" type="submit">إرسال</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Inventor Section ===== -->
+    <section class="inventor-section bg-dark text-white py-5">
+      <div class="layout-container">
+        <div class="section-header">
+          <h2 class="section-title text-white">مبتكرين الفكرة</h2>
+        </div>
+        <div class="flex-Top">
+          <div class="flex-center">
+            <div class="inventor-card animate-fadeInUp">
+              <div class="IMG_STAIL">
+                <img src="imge/120248342.jfif" alt="م. غمدان نشوان" class="inventor-img" />
+              </div>
+              <div class="inventor-info text-center">
+                <h2 class="mb-2">
+                  <a href="https://wa.me/967775054212" target="_blank">م.غمدان نشوان</a>
+                </h2>
+                <p class="text-secondary mb-4">
+                  مهندس برمجيات ومبتكر تقني يمني، رائد في مجال حلول الأنظمة
+                  الذكية والتحول الرقمي. مواقع وتطبيقات ويب حديثة، سريعة،
+                  وقابلة للتوسع باستخدام أحدث تقنيات الويب.
+                </p>
+                <div class="social-links justify-center">
+                  <a href="https://www.barmgely.com/" target="_blank" title="GitHub"><i
+                      class="fa-brands fa-github"></i></a>
+                  <a href="https://www.facebook.com/ghamdanal42/?locale=ca_ES" target="_blank" title="LinkedIn"><i
+                      class="fa-brands fa-facebook"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex-center">
+            <div class="inventor-card animate-fadeInUp">
+              <div class="IMG_STAIL">
+                <img src="imge/wysd2025_3.jpg" alt="م. محمد الزوعري" class="inventor-img" />
+              </div>
+              <div class="inventor-info text-center">
+                <h2 class="mb-2">
+                  <a href="https://wa.me/967775054212" target="_blank">م.محمد احمد الزوعري</a>
+                </h2>
+                <p class="text-secondary mb-4">
+                  مختص تكنولوجيا معلومات ومبتكر تقني يمني، أعمل على إدارة
+                  وتطوير الأنظمة التقنية، البنية التحتية الرقمية، وحلول التحول
+                  الرقمي باستخدام أحدث التقنيات.
+                </p>
+                <div class="social-links justify-center">
+                  <a href="https://www.barmgely.com/" target="_blank" title="GitHub"><i
+                      class="fa-brands fa-github"></i></a>
+                  <a href="https://www.facebook.com/ghamdanal42/?locale=ca_ES" target="_blank" title="LinkedIn"><i
+                      class="fa-brands fa-facebook"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex-center">
+            <div class="inventor-card animate-fadeInUp">
+              <div class="IMG_STAIL">
+                <img src="imge/images.jfif" alt="م. هشام قاسم صغير" class="inventor-img" />
+              </div>
+              <div class="inventor-info text-center">
+                <h2 class="mb-2">
+                  <a href="https://wa.me/967775054212" target="_blank">م.هشام قاسم صغير</a>
+                </h2>
+                <p class="text-secondary mb-4">
+                  مهندس برمجيات يمني مختص بتطوير الويب، أعمل على تصميم وبناء
+                  مواقع وتطبيقات ويب حديثة، سريعة، وقابلة للتوسع باستخدام أحدث
+                  تقنيات الويب.
+                </p>
+                <div class="social-links justify-center">
+                  <a href="https://www.barmgely.com/" target="_blank" title="GitHub"><i
+                      class="fa-brands fa-github"></i></a>
+                  <a href="https://www.facebook.com/ghamdanal42/?locale=ca_ES" target="_blank" title="LinkedIn"><i
+                      class="fa-brands fa-facebook"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="layout-container">
+      <div class="footer-content">
+        <div class="footer-section deg">
+          <h3>تكنلوجي سولار</h3>
+          <p>
+            نحن نسعى لتوفير طاقة نظيفة ومستقرة لكل منزل في اليمن من خلال دمج
+            التقنيات الحديثة مع حلول الطاقة المستدامة.
+          </p>
+        </div>
+        <div class="footer-section deg">
+          <h3>روابط سريعة</h3>
+          <ul>
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#about">عن المشروع</a></li>
+            <li><a href="#tech">التقنيات</a></li>
+            <li>
+              <a href="http://cloud.barmgely.dev/" target="_blank">رابط التطبيق</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-section deg">
+          <h3>ساعات العمل</h3>
+          <p>السبت - الخميس: 8:00 ص - 4:00 م</p>
+          <p>الجمعة: مغلق</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          جميع الحقوق محفوظة &copy; 2026 | تصميم وتنفيذ
+          <span>باسل السعيدي</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
