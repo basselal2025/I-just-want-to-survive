@@ -305,9 +305,9 @@ header {
 }
 
 .hero-content p {
-  font-size: 1.3rem;
+  font-size: 1rem;
   margin-bottom: 30px;
-  max-width: 700px;
+  max-width: 550px;
   margin-left: auto;
   margin-right: auto;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
@@ -637,7 +637,7 @@ footer {
 .btn-large {
   padding: 15px 35px;
   font-size: 1.1rem;
-  transform: translatey(15px);
+  transform: translatey(50px);
 }
 
 /* Icons using CSS */
