@@ -18,7 +18,7 @@
       rgba(255, 255, 255, 0.01));
   --gradient-overlay: linear-gradient(180deg, #4dabf7, #60d394);
   /* Spacing - Unified */
-  --section-padding: 80px 0;
+  --section-padding: 50px 0;
   --container-padding: 0 20px;
   --card-padding: 30px;
   --grid-gap: 30px;
@@ -369,7 +369,7 @@ footer {
 .social-links {
   display: flex;
   gap: 15px;
-  margin-top: 15px;
+  margin-top: 50px;
 }
 
 .social-links a {
@@ -545,7 +545,7 @@ footer {
 .card-icon {
   width: var(--icon-size);
   height: var(--icon-size);
-  margin: 0 auto 20px;
+  margin: 0 auto 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -761,7 +761,7 @@ footer {
 /* Section Headers */
 .section-header {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom:50px;
 }
 
 .section-title {
@@ -790,7 +790,7 @@ footer {
   font-size: 1.2rem;
   color: #666;
   max-width: 600px;
-  margin: 20px auto 0;
+  margin: 10px auto 0;
   line-height: 1.8;
 }
 
