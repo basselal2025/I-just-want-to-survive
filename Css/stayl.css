@@ -13,14 +13,16 @@
 
   /* Gradients */
   --gradient-primary: #071329;
-  --gradient-accent: linear-gradient(180deg,
-      rgba(255, 255, 255, 0.03),
-      rgba(255, 255, 255, 0.01));
+  --gradient-accent: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.03),
+    rgba(255, 255, 255, 0.01)
+  );
   --gradient-overlay: linear-gradient(180deg, #4dabf7, #60d394);
   /* Spacing - Unified */
   --section-padding: 50px 0;
   --container-padding: 0 20px;
-  --card-padding: 15px 30px 15px 30px;;
+  --card-padding: 15px 30px 15px 30px;
   --grid-gap: 30px;
   --icon-size: 60px;
   --social-icon-size: 40px;
@@ -483,8 +485,7 @@ footer {
   background: #ffffff;
   border-radius: 15px;
   padding: var(--card-padding);
-  box-shadow: var(--shadow-sm);
-  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+
   position: relative;
   overflow: hidden;
   display: flex;
@@ -498,7 +499,7 @@ footer {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   padding: 30px;
-  border: 1px solid var(--border-color);
+
   background: var(--light-color);
 }
 
@@ -531,9 +532,11 @@ footer {
   left: 0;
   width: 100%;
   height: 3px;
-  background: linear-gradient(90deg,
-      var(--primary-color),
-      var(--secondary-color));
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
   border-radius: 15px 15px 0 0;
 }
 
@@ -549,9 +552,11 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg,
-      var(--dark-color),
-      var(--secondary-color));
+  background: linear-gradient(
+    135deg,
+    var(--dark-color),
+    var(--secondary-color)
+  );
   border-radius: 50%;
   color: white;
   font-size: 2rem;
@@ -579,7 +584,7 @@ footer {
   padding: 30px;
   text-align: center;
   transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-  border: 2px solid transparent;
+
   box-shadow: var(--shadow-sm);
   height: 100%;
   display: flex;
@@ -725,8 +730,8 @@ footer {
   height: 30px;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
-    top: 15px;
-    left: 15px;
+  top: 15px;
+  left: 15px;
 }
 
 /* Mobile App Icon */
@@ -761,7 +766,7 @@ footer {
 /* Section Headers */
 .section-header {
   text-align: center;
-  margin-bottom:50px;
+  margin-bottom: 50px;
 }
 
 .section-title {
@@ -778,9 +783,11 @@ footer {
   position: absolute;
   width: 60%;
   height: 4px;
-  background: linear-gradient(90deg,
-      var(--primary-color),
-      var(--secondary-color));
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
   bottom: -10px;
   left: 20%;
   border-radius: 2px;
@@ -827,7 +834,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-
   .grid-2,
   .grid-3,
   .grid-4 {
@@ -892,9 +898,11 @@ footer {
 .stat-number {
   font-size: 3rem;
   font-weight: 800;
-  background: linear-gradient(135deg,
-      var(--primary-color),
-      var(--secondary-color));
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -919,9 +927,11 @@ footer {
   right: 50%;
   width: 4px;
   height: 100%;
-  background: linear-gradient(180deg,
-      var(--primary-color),
-      var(--secondary-color));
+  background: linear-gradient(
+    180deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
   border-radius: 2px;
 }
 
@@ -958,9 +968,11 @@ footer {
   transform: translateX(40%);
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg,
-      var(--primary-color),
-      var(--secondary-color));
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
   border: 4px solid white;
   border-radius: 50%;
   box-shadow: 0 0 0 4px rgba(30, 144, 255, 0.15);
@@ -984,9 +996,11 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg,
-      var(--primary-color),
-      var(--secondary-color));
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
   border-radius: 50%;
   color: white;
   font-size: 2rem;
@@ -1094,7 +1108,6 @@ footer {
 }
 
 @keyframes pulse {
-
   0%,
   100% {
     transform: scale(1);
@@ -1151,7 +1164,6 @@ footer {
 
 /* Bounce Animation */
 @keyframes bounce {
-
   0%,
   20%,
   50%,
@@ -1171,7 +1183,6 @@ footer {
 
 /* Glow Animation */
 @keyframes glow {
-
   0%,
   100% {
     box-shadow:
@@ -1200,7 +1211,6 @@ footer {
 
 /* Float Animation */
 @keyframes float {
-
   0%,
   100% {
     transform: translateY(0);
@@ -1346,10 +1356,12 @@ footer {
 
 /* Gradient Background Animation */
 .gradient-animated {
-  background: linear-gradient(270deg,
-      var(--primary-color),
-      var(--secondary-color),
-      #667eea);
+  background: linear-gradient(
+    270deg,
+    var(--primary-color),
+    var(--secondary-color),
+    #667eea
+  );
   background-size: 600% 600%;
   animation: gradientShift 10s ease infinite;
 }
@@ -1366,10 +1378,12 @@ footer {
 
 /* Shimmer Effect */
 .shimmer {
-  background: linear-gradient(90deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0.3) 50%,
-      rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
   background-size: 200% 100%;
   animation: shimmer 2s infinite;
 }
@@ -1491,7 +1505,7 @@ footer {
   background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+
   padding: 35px;
   border-radius: 20px;
   height: 380px;
