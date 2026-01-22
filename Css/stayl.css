@@ -20,7 +20,8 @@
   );
   --gradient-overlay: linear-gradient(180deg, #4dabf7, #60d394);
   /* Spacing - Unified */
-  --section-padding: 50px 0 55px 0;
+  --section-padding: 60px 0;
+  --section-padding-mobile: 40px 0;
   --container-padding: 0 20px;
   --card-padding: 30px;
   --grid-gap: 30px;
@@ -282,7 +283,7 @@ header {
   top: 50%;
   left: 0;
   width: 100%;
-  height: 38%;
+  height: 40%;
   background: #0713298c;
   z-index: -1;
   transform: translatey(-50%);
@@ -413,7 +414,7 @@ footer {
   }
 
   section {
-    padding: 50px 0;
+    padding: var(--section-padding-mobile);
   }
 }
 
@@ -744,7 +745,7 @@ footer {
 /* Section Headers */
 .section-header {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   line-height: 0.9;
 }
 
@@ -754,31 +755,41 @@ footer {
   color: var(--dark-color);
   position: relative;
   display: inline-block;
+  position: relative;
+  cursor: pointer;
 }
-
+.section-title:hover::before,
+.section-title:hover::after {
+opacity: 5;
+transition: 0.3s;
+}
+.section-title::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background: var(--primary-color);
+    right: -27px;
+    transform: translateY(-50%);
+    top: 50%;
+    border-radius: 50%;
+    opacity: 0;
+       transition: 0.3s;
+}
 .section-title::after {
-  content: "";
-  position: absolute;
-  width: 60%;
-  height: 4px;
-  background: linear-gradient(
-    90deg,
-    var(--primary-color),
-    var(--secondary-color)
-  );
-  bottom: -10px;
-  left: 20%;
-  border-radius: 2px;
-  top: 55px;
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background: var(--primary-color);
+  left: -27px;
+    transform: translateY(-50%);
+    top: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    transition: 0.3s;
 }
 
-.section-subtitle {
-  font-size: 1.2rem;
-  color: #666;
-  max-width: 600px;
-  margin: 10px auto 0;
-  line-height: 1.8;
-}
 
 /* Grid Layouts */
 .grid-2 {
@@ -1475,7 +1486,6 @@ footer {
 /* ===== Inventor Section & Card ===== */
 .inventor-section {
   position: relative;
-  padding: 60px 0;
   background: #0f172a;
 }
 
@@ -1488,7 +1498,7 @@ footer {
   height: 380px;
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   max-width: 550px;
-  width: 90%;
+
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -1507,11 +1517,7 @@ footer {
   background: var(--bg-light);
 }
 
-.flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .justify-center {
   justify-content: center;
@@ -1550,8 +1556,11 @@ i.fa-solid.fa-phone {
   color: var(--border-color) !important;
 }
 
-.flex-Top {
-  display: flex;
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--grid-gap);
+    align-items: stretch;
 }
 
 @media (max-width: 767px) {
