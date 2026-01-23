@@ -3,7 +3,7 @@
 /* Cards */
 .card {
   background: #ffffff;
-  border-radius: 15px;
+  border-radius: var(--radius-md);
   padding: var(--card-padding);
   position: relative;
   overflow: hidden;
@@ -16,8 +16,8 @@
 #contact .animate-fadeInLeft form.card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5px;
-  padding: 30px;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
   background: var(--light-color);
 }
 
@@ -34,7 +34,7 @@
 @media (max-width: 600px) {
   #contact .animate-fadeInLeft form.card {
     grid-template-columns: 1fr;
-    padding: 20px;
+    padding: var(--spacing-md);
   }
 
   #contact .animate-fadeInLeft form.card .form-group:nth-child(3),
@@ -43,10 +43,94 @@
   }
 }
 
+/* Enhanced Contact Info Card */
+.contact-info-card {
+  justify-content: space-between;
+  background: linear-gradient(135deg, #ffffff 0%, #f8faff 100%);
+}
+
+.contact-info-card h3 {
+  font-size: var(--font-h3);
+  margin-bottom: var(--spacing-lg);
+  position: relative;
+  display: inline-block;
+  color: var(--primary-color);
+}
+
+.contact-info-card h3::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  width: 40px;
+  height: 3px;
+  background: var(--secondary-color);
+  border-radius: 2px;
+}
+
+.contact-info-card ul {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.contact-info-card li {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: 10px 15px;
+  background: white;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-normal);
+  border: 1px solid transparent;
+}
+
+.contact-info-card li:hover {
+  transform: translateX(-5px);
+  border-color: rgba(30, 144, 255, 0.2);
+  box-shadow: var(--shadow-md);
+}
+
+.contact-info-card li i {
+  font-size: 1.2rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(30, 144, 255, 0.1);
+  border-radius: 50%;
+  color: var(--secondary-color) !important;
+}
+
+.contact-info-card .social-links {
+  margin-top: auto;
+  justify-content: center;
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--border-color);
+}
+
+.contact-info-card .social-links a {
+  background: white;
+  color: var(--secondary-color);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.contact-info-card .social-links a:hover {
+  background: var(--gradient-primary);
+  color: white;
+  transform: translateY(-5px);
+}
+
 .card-icon {
   width: var(--icon-size);
   height: var(--icon-size);
-  margin: 0 auto 15px;
+  margin: 0 auto var(--spacing-md);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -59,10 +143,10 @@
 }
 
 .card-title {
-  font-size: 1.4rem;
+  font-size: var(--font-h3);
   font-weight: 700;
   color: var(--dark-color);
-  margin-bottom: 15px;
+  margin-bottom: var(--spacing-md);
   text-align: center;
 }
 
@@ -70,14 +154,14 @@
   color: #666;
   line-height: 1.8;
   text-align: center;
-  font-size: 1rem;
+  font-size: var(--font-p);
 }
 
 /* Feature Cards */
 .feature-card {
   background-color: var(--bg-light);
-  border-radius: 15px;
-  padding: 30px;
+  border-radius: var(--radius-md);
+  padding: var(--spacing-lg);
   text-align: center;
   transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 
@@ -259,7 +343,7 @@
 /* Section Headers */
 .section-header {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: var(--spacing-xl);
   line-height: 0.9;
   transform: translateY(-5%);
 }
@@ -317,7 +401,7 @@
   display: block;
   font-weight: 600;
   color: var(--dark-color);
-  margin-bottom: 10px;
+  margin-bottom: var(--spacing-sm);
   font-size: 1rem;
 }
 
@@ -352,12 +436,12 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: var(--spacing-lg);
 }
 
 .stat-item {
   text-align: center;
-  padding: 30px;
+  padding: var(--spacing-lg);
   flex: 1;
   min-width: 200px;
 }
@@ -371,7 +455,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: 10px;
+  margin-bottom: var(--spacing-sm);
 }
 
 .stat-label {
@@ -405,7 +489,7 @@
 
 .timeline-content {
   background: white;
-  padding: 30px;
+  padding: var(--spacing-lg);
   border-radius: 15px;
   box-shadow: var(--shadow-sm);
   width: 45%;
@@ -453,7 +537,7 @@
 .timeline-icon {
   width: var(--icon-size);
   height: var(--icon-size);
-  margin: 0 auto 15px;
+  margin: 0 auto var(--spacing-md);
   display: flex;
   align-items: center;
   justify-content: center;
