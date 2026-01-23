@@ -135,9 +135,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg,
-      var(--dark-color),
-      var(--secondary-color));
+  background: linear-gradient(180deg, #4dabf7, #60d394);;
   border-radius: 50%;
   color: white;
   font-size: 1.5rem;

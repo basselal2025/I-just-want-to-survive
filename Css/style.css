@@ -432,7 +432,7 @@ footer {
 
 .footer-section ul {
   display: flex;
-  flex-direction: column;
+
   gap: var(--space-3);
 }
 
@@ -551,7 +551,7 @@ footer {
 }
 
 .footer-bottom span {
-  color: var(--secondary-color);
+  color: #56bfc4 ;
   cursor: pointer;
   margin-right: var(--space-2);
 }
@@ -647,7 +647,7 @@ footer {
 }
 
 .justify-center i {
-  color: var(--gradient-accent);
+  color: #56bfc4;
 }
 
 .text-white {
