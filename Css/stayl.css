@@ -100,13 +100,14 @@ h2,
 h3,
 h4 {
   color: #333 !important;
-      font-size: 1.4rem;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
 }
- p {
-    color: #666;
-    line-height: 1.8;
-    text-align: center;
-    font-size: 1rem;
+p {
+  color: #666;
+  line-height: 1.8;
+  text-align: center;
+  font-size: 1rem;
 }
 img {
   max-width: 100%;
@@ -428,7 +429,7 @@ footer {
 /* ===== Utility Classes ===== */
 .text-center {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .text-gradient {
@@ -440,10 +441,6 @@ footer {
 
 .mt-1 {
   margin-top: 10px;
-}
-
-.mt-2 {
-  margin-top: 20px;
 }
 
 .mt-3 {
@@ -529,15 +526,10 @@ footer {
   }
 }
 
-/* .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(30, 144, 255, 0.2);
-} */
-
 .card-icon {
   width: var(--icon-size);
   height: var(--icon-size);
-  margin: 5px auto 15px;
+  margin: 0 auto 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -568,12 +560,12 @@ footer {
 
 /* Feature Cards */
 .feature-card {
-  background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
+  background-color: var(--bg-light);
   border-radius: 15px;
   padding: 30px;
   text-align: center;
   transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-  box-shadow: var(--shadow-sm);
+
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -754,7 +746,7 @@ footer {
   text-align: center;
   margin-bottom: 60px;
   line-height: 0.9;
-      transform: translateY(-5%);
+  transform: translateY(-5%);
 }
 
 .section-title {
@@ -768,36 +760,35 @@ footer {
 }
 .section-title:hover::before,
 .section-title:hover::after {
-opacity: 5;
-transition: 0.3s;
+  opacity: 5;
+  transition: 0.3s;
 }
 .section-title::before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    background: var(--primary-color);
-    right: -27px;
-    transform: translateY(-50%);
-    top: 50%;
-    border-radius: 50%;
-    opacity: 0;
-       transition: 0.3s;
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background: var(--primary-color);
+  right: -27px;
+  transform: translateY(-50%);
+  top: 50%;
+  border-radius: 50%;
+  opacity: 0;
+  transition: 0.3s;
 }
 .section-title::after {
-    content: "";
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    background: var(--primary-color);
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background: var(--primary-color);
   left: -27px;
-    transform: translateY(-50%);
-    top: 50%;
-    border-radius: 50%;
-    opacity: 0;
-    transition: 0.3s;
+  transform: translateY(-50%);
+  top: 50%;
+  border-radius: 50%;
+  opacity: 0;
+  transition: 0.3s;
 }
-
 
 /* Grid Layouts */
 .grid-2 {
@@ -874,7 +865,7 @@ transition: 0.3s;
 }
 
 .form-textarea {
-  min-height: 150px;
+  min-height: 200px;
   resize: vertical;
 }
 
@@ -1498,16 +1489,12 @@ transition: 0.3s;
 }
 
 .inventor-card {
-  background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
-  backdrop-filter: blur(12px);
+  background-color: var(--bg-light);
+
   -webkit-backdrop-filter: blur(12px);
   padding: 35px;
   border-radius: 20px;
-  height: 380px;
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  max-width: 550px;
 
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1524,8 +1511,6 @@ transition: 0.3s;
   border-color: var(--border-color);
   background: var(--bg-light);
 }
-
-
 
 .justify-center {
   justify-content: center;
@@ -1565,10 +1550,10 @@ i.fa-solid.fa-phone {
 }
 
 .grid-3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--grid-gap);
-    align-items: stretch;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--grid-gap);
+  align-items: stretch;
 }
 
 @media (max-width: 767px) {
@@ -1595,16 +1580,17 @@ i.fa-solid.fa-phone {
 }
 
 .bottomo {
-  margin-top: 10px;
+  width: 100%;
   padding: 10px;
   border: none;
   background: var(--dark-color);
   color: #fff;
   font-size: 12px;
   cursor: pointer;
-  border-radius: 3px;
+  border-radius: 8px;
   transition: 0.3s;
   font-weight: 800;
+  margin-top: 3px;
 }
 
 .bottomo:hover {
