@@ -14,7 +14,7 @@
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(var(--space-8));
     }
 
     to {
@@ -26,7 +26,7 @@
 @keyframes fadeInDown {
     from {
         opacity: 0;
-        transform: translateY(-30px);
+        transform: translateY(calc(var(--space-8) * -1));
     }
 
     to {
@@ -38,7 +38,7 @@
 @keyframes fadeInLeft {
     from {
         opacity: 0;
-        transform: translateX(-30px);
+        transform: translateX(calc(var(--space-8) * -1));
     }
 
     to {
@@ -50,7 +50,7 @@
 @keyframes fadeInRight {
     from {
         opacity: 0;
-        transform: translateX(30px);
+        transform: translateX(var(--space-8));
     }
 
     to {
@@ -140,11 +140,11 @@
     }
 
     40% {
-        transform: translateY(-20px);
+        transform: translateY(calc(var(--space-5) * -1));
     }
 
     60% {
-        transform: translateY(-10px);
+        transform: translateY(calc(var(--space-3) * -1));
     }
 }
 
@@ -154,15 +154,15 @@
     0%,
     100% {
         box-shadow:
-            0 0 5px rgba(30, 144, 255, 0.5),
-            0 0 10px rgba(30, 144, 255, 0.3);
+            0 0 var(--space-1) rgba(30, 144, 255, 0.5),
+            0 0 var(--space-3) rgba(30, 144, 255, 0.3);
     }
 
     50% {
         box-shadow:
-            0 0 20px rgba(30, 144, 255, 0.8),
-            0 0 30px rgba(30, 144, 255, 0.5),
-            0 0 40px rgba(30, 144, 255, 0.3);
+            0 0 var(--space-5) rgba(30, 144, 255, 0.8),
+            0 0 var(--space-8) rgba(30, 144, 255, 0.5),
+            0 0 var(--space-10) rgba(30, 144, 255, 0.3);
     }
 }
 
@@ -186,7 +186,7 @@
     }
 
     50% {
-        transform: translateY(-20px);
+        transform: translateY(calc(var(--space-5) * -1));
     }
 }
 
@@ -293,7 +293,7 @@
 }
 
 .hover-lift:hover {
-    transform: translateY(-6px);
+    transform: translateY(calc(var(--space-2) * -1));
     box-shadow: var(--shadow-md);
 }
 
@@ -319,8 +319,8 @@
 
 .hover-glow:hover {
     box-shadow:
-        0 0 15px rgba(30, 144, 255, 0.3),
-        0 0 30px rgba(30, 144, 255, 0.2);
+        0 0 var(--space-4) rgba(30, 144, 255, 0.3),
+        0 0 var(--space-8) rgba(30, 144, 255, 0.2);
 }
 
 /* Gradient Background Animation */
@@ -335,9 +335,9 @@
 
 /* Loading Spinner Component */
 .spinner {
-    width: 50px;
-    height: 50px;
-    border: 5px solid rgba(30, 144, 255, 0.2);
+    width: var(--space-12);
+    height: var(--space-12);
+    border: var(--space-1) solid rgba(30, 144, 255, 0.2);
     border-top-color: var(--primary-color);
     border-radius: 50%;
     animation: spin 1s linear infinite;
@@ -453,7 +453,7 @@
 /* Reveal on Scroll (using CSS only with viewport units) */
 .reveal {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(var(--space-12));
     transition:
         opacity 0.8s ease,
         transform 0.8s ease;
