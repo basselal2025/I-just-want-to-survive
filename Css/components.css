@@ -12,6 +12,35 @@
   height: 100%;
 }
 
+/* Strict Spacing for Tech & Data Flow Section */
+#tech .card,
+#data-flow .card {
+  gap: 16px;
+  /* 1rem Universal Gap */
+}
+
+/* Ensure List Items also follow the universal gap */
+#tech .card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  /* Same 16px to match parent gap */
+  padding: 0;
+  margin: 0;
+}
+
+/* Center Content for Data Flow Only */
+#data-flow .card {
+  align-items: center;
+  text-align: center;
+}
+
+#tech .card>*,
+#data-flow .card>* {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
 /* Contact form grid specific layout */
 #contact .animate-fadeInLeft form.card {
   display: grid;
@@ -106,10 +135,18 @@
 }
 
 .contact-info-card .social-links a {
-  background: white;
-  color: #56bfc4;
-  box-shadow: var(--shadow-sm);
-  border: 1px solid rgba(0, 0, 0, 0.05);
+    background: white;
+    color: #56bfc4;
+    box-shadow: var(--shadow-sm);
+
+    border-radius: 50%;
+
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .contact-info-card .social-links a:hover {
@@ -287,7 +324,7 @@
 /* AI Brain Icon */
 .icon-ai {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border-radius: 50% 50% 50% 0;
+  border-radius: 50%;
   position: relative;
   transform: rotate(-45deg);
 }

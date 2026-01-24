@@ -165,9 +165,9 @@
 
         <div class="grid-3">
           <div class="card">
-            <div class="css-icon icon-iot mb-2"></div>
+            <div class="css-icon icon-iot"></div>
             <h3 class="text-center">الأجهزة الطرفية (IoT)</h3>
-            <ul class="mt-2">
+            <ul>
               <li>
                 <i class="fa-solid fa-check text-secondary"></i> حساسات شدة
                 الإضاءة (LDR)
@@ -183,9 +183,9 @@
             </ul>
           </div>
           <div class="card">
-            <div class="css-icon icon-ai mb-2"></div>
+            <div class="css-icon icon-ai"></div>
             <h3 class="text-center">الخادم والمعالجة</h3>
-            <ul class="mt-2">
+            <ul>
               <li>
                 <i class="fa-solid fa-check text-secondary"></i> خادم سحابي
                 لتخزين البيانات
@@ -201,9 +201,9 @@
             </ul>
           </div>
           <div class="card">
-            <div class="css-icon icon-mobile mb-2"></div>
+            <div class="css-icon icon-mobile"></div>
             <h3 class="text-center">واجهة المستخدم</h3>
-            <ul class="mt-2">
+            <ul>
               <li>
                 <i class="fa-solid fa-check text-secondary"></i> تطبيق فلاتر
                 (Flutter)
@@ -231,43 +231,49 @@
 
         <div class="grid-4">
           <div class="card stagger-item hover-lift">
-            <h3>1. جمع البيانات</h3>
+            <div class="card-icon"><i class="fa-solid fa-solar-panel"></i></div>
+            <h3>جمع البيانات</h3>
             <p>
               الحساسات تقرأ المعطيات (فولطية، تيار، حرارة، إضاءة) دورياً
               وترسلها لوحدة الإرسال.
             </p>
           </div>
           <div class="card stagger-item hover-lift">
-            <h3>2. الإرسال السحابي</h3>
+            <div class="card-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+            <h3>الإرسال السحابي</h3>
             <p>
               وحدة ESP8266 تبعث البيانات عبر الإنترنت إلى الخادم السحابي
               للمعالجة.
             </p>
           </div>
           <div class="card stagger-item hover-lift">
-            <h3>3. المعالجة والذكاء</h3>
+            <div class="card-icon"><i class="fa-solid fa-microchip"></i></div>
+            <h3>المعالجة والذكاء</h3>
             <p>
               تصفية البيانات، استدعاء بيانات الطقس، وحساب قدرة الشحن المتوقعة
               (SOC).
             </p>
           </div>
           <div class="card stagger-item hover-lift">
-            <h3>5. المراقبة والتحكم</h3>
+            <div class="card-icon"><i class="fa-solid fa-robot"></i></div>
+            <h3>اتخاذ القرار</h3>
+            <p>
+              تفعيل متعقب الشمس، إرسال أوامر للأحمال، وعرض التنبؤات للمستخدم.
+            </p>
+          </div>
+          <div class="card stagger-item hover-lift">
+            <div class="card-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+            <h3>المراقبة والتحكم</h3>
             <p>
               متابعة النظام لحظياً عبر التطبيق وإمكانية التحكم اليدوي عند
               الحاجة.
             </p>
           </div>
           <div class="card stagger-item hover-lift">
-            <h3>6. الصيانة والتنبيهات</h3>
+            <div class="card-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+            <h3>الصيانة والتنبيهات</h3>
             <p>
               اكتشاف الأعطال مبكراً وإرسال إشعارات للصيانة أو تنظيف الألواح.
-            </p>
-          </div>
-          <div class="card stagger-item hover-lift">
-            <h3>4. اتخاذ القرار</h3>
-            <p>
-              تفعيل متعقب الشمس، إرسال أوامر للأحمال، وعرض التنبؤات للمستخدم.
             </p>
           </div>
         </div>
@@ -287,10 +293,10 @@
                 <img src="imge/120248342.jfif" alt="م. غمدان نشوان" class="inventor-img" />
               </div>
               <div class="inventor-info text-center">
-                <h2 class="mb-2">
+                <h2>
                   <a href="https://wa.me/967775054212" target="_blank">م.غمدان نشوان</a>
                 </h2>
-                <p class="text-secondary mb-4">
+                <p class="text-secondary">
                   مهندس برمجيات ومبتكر تقني يمني، رائد في مجال حلول الأنظمة
                   الذكية والتحول الرقمي. مواقع وتطبيقات ويب حديثة، سريعة،
                   وقابلة للتوسع باستخدام أحدث تقنيات الويب.
@@ -310,10 +316,10 @@
                 <img src="imge/wysd2025_3.jpg" alt="م. محمد الزوعري" class="inventor-img" />
               </div>
               <div class="inventor-info text-center">
-                <h2 class="mb-2">
+                <h2>
                   <a href="https://wa.me/967775054212" target="_blank">م.محمد احمد الزوعري</a>
                 </h2>
-                <p class="text-secondary mb-4">
+                <p class="text-secondary">
                   مختص تكنولوجيا معلومات ومبتكر تقني يمني، أعمل على إدارة
                   وتطوير الأنظمة التقنية، البنية التحتية الرقمية، وحلول التحول
                   الرقمي باستخدام أحدث التقنيات.
@@ -333,12 +339,13 @@
                 <img src="imge/images.jfif" alt="م. هشام قاسم صغير" class="inventor-img" />
               </div>
               <div class="inventor-info text-center">
-                <h2 class="mb-2">
+                <h2>
                   <a href="https://wa.me/967775054212" target="_blank">م.هشام قاسم صغير</a>
                 </h2>
-                <p class="text-secondary mb-4">
+                <p class="text-secondary">
                   مهندس برمجيات يمني مختص بتطوير الويب، أعمل على تصميم وبناء
                   مواقع وتطبيقات ويب حديثة، سريعة، وقابلة للتوسع باستخدام أحدث
+                  تقنيات الويب.
                   تقنيات الويب.
                 </p>
                 <div class="social-links justify-center">
@@ -408,29 +415,38 @@
   <footer>
     <div class="layout-container">
       <div class="footer-content">
-        <div class="footer-section deg">
-          <h3>تكنلوجي سولار</h3>
+        <div class="footer-section">
+          <h3><i class="fa-solid fa-solar-panel text-secondary"></i> تكنلوجي سولار</h3>
           <p>
             رؤيتنا هي قيادة التحول نحو الطاقة الذكية في اليمن، عبر حلول مبتكرة
             تدمج إنترنت الأشياء والذكاء الاصطناعي لتوفير طاقة نظيفة، مستدامة،
             وأكثر كفاءة للجميع.
           </p>
         </div>
-        <div class="footer-section deg">
+        <div class="footer-section">
           <h3>روابط سريعة</h3>
-          <ul>
-            <li><a href="#home">الرئيسية</a></li>
-            <li><a href="#about">عن المشروع</a></li>
-            <li><a href="#tech">التقنيات</a></li>
+          <ul class="footer-links">
+            <li><a href="#home"><i class="fa-solid fa-angle-left"></i> الرئيسية</a></li>
+            <li><a href="#about"><i class="fa-solid fa-angle-left"></i> عن المشروع</a></li>
+            <li><a href="#tech"><i class="fa-solid fa-angle-left"></i> التقنيات</a></li>
             <li>
-              <a href="http://cloud.barmgely.dev/" target="_blank">رابط التطبيق</a>
+              <a href="http://cloud.barmgely.dev/" target="_blank"><i class="fa-solid fa-angle-left"></i> رابط
+                التطبيق</a>
             </li>
           </ul>
         </div>
-        <div class="footer-section deg">
+        <div class="footer-section">
           <h3>ساعات العمل</h3>
-          <p>السبت - الخميس: 8:00 ص - 4:00 م</p>
-          <p>الجمعة: مغلق</p>
+          <ul class="working-hours">
+            <li>
+              <i class="fa-regular fa-clock text-secondary"></i>
+              <span>السبت - الخميس: 8:00 ص - 4:00 م</span>
+            </li>
+            <li>
+              <i class="fa-regular fa-calendar-xmark text-secondary"></i>
+              <span>الجمعة: مغلق</span>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="footer-bottom">
