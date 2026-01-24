@@ -682,7 +682,14 @@ footer {
 }
 
 .justify-center i {
-  color: #56bfc4;
+    color: #56bfc4;
+    background: rgba(30, 144, 255, 0.1);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .text-white {
