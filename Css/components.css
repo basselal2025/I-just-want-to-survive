@@ -24,7 +24,7 @@
   display: flex;
   flex-direction: column;
     line-height: 1.8;
-
+transform: translateY(-5px);
   padding: 0;
   margin: 0;
 }
@@ -291,9 +291,10 @@
 
 /* IoT Icon */
 .icon-iot {
-  border: 3px solid var(--primary-color);
-  border-radius: 50%;
-  position: relative;
+    border: 3px solid rgba(30, 144, 255, 0.1);
+    border-radius: 50%;
+    position: relative;
+    background: rgba(30, 144, 255, 0.1);
 }
 
 .icon-iot::before {
@@ -301,7 +302,7 @@
   position: absolute;
   width: var(--space-5);
   height: var(--space-5);
-  background: var(--primary-color);
+  background: #56bfc4;
   border-radius: 50%;
   top: 50%;
   left: 50%;
@@ -313,7 +314,7 @@
   position: absolute;
   width: var(--space-10);
   height: var(--space-10);
-  border: 2px dashed var(--primary-color);
+  border: 2px dashed #56bfc4;
   border-radius: 50%;
   top: 50%;
   left: 50%;
@@ -322,26 +323,26 @@
 
 /* AI Brain Icon */
 .icon-ai {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border-radius: 50%;
-  position: relative;
-  transform: rotate(-45deg);
+    background: rgba(30, 144, 255, 0.1);
+    border-radius: 50%;
+    position: relative;
+
 }
 
 .icon-ai::before {
-  content: "";
-  position: absolute;
-  width: var(--space-8);
-  height: var(--space-8);
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
-  top: var(--space-4);
-  left: var(--space-4);
+    content: "";
+    position: absolute;
+    width: var(--space-8);
+    height: var(--space-8);
+    background: #56bfc4;
+    border-radius: 50%;
+    top: var(--space-4);
+    left: var(--space-4);
 }
 
 /* Mobile App Icon */
 .icon-mobile {
-  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+  background: rgba(30, 144, 255, 0.1);
   border-radius: var(--radius-md);
   position: relative;
 }
@@ -351,7 +352,7 @@
   position: absolute;
   width: 70%;
   height: 60%;
-  background: rgba(255, 255, 255, 0.3);
+  background: #56bfc4;
   border-radius: 8px;
   top: 15%;
   left: 15%;
@@ -362,7 +363,7 @@
   position: absolute;
   width: 20%;
   height: 3px;
-  background: rgba(255, 255, 255, 0.5);
+  background: #56bfc4;
   border-radius: 2px;
   bottom: 8px;
   left: 40%;
