@@ -405,14 +405,10 @@ section:nth-child(even) {
 
 /* ===== Footer ===== */
 footer {
-    background: var(--gradient-primary);
-    color: var(--light-color);
-
-    position: relative;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background: var(--gradient-primary);
+  color: var(--light-color);
+   padding: 50px 0 30px 0;  
+  position: relative;
 ;
 
 }
@@ -509,14 +505,12 @@ footer {
 }
 
 .footer-bottom {
-    font-size: 0.95rem;
-    color: #8892b0;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-
+  text-align: center;
+  padding-top: var(--space-8);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: var(--space-5);
+  font-size: 0.95rem;
+  color: #8892b0;
 }
 
 /* ===== Responsive Design ===== */
@@ -525,7 +519,7 @@ footer {
 /* ===== Utility Classes ===== */
 .text-center {
   text-align: center !important;
-  margin-top: var(--space-2);
+  margin-top: 10px;
 }
 
 .text-gradient {
@@ -666,7 +660,7 @@ footer {
 
 /* Fix Social Links Spacing (Remove extra margin, enforce gap) */
 .inventor-info .social-links {
-  margin-top: 0 !important;
+  margin-top: 10!important;
   gap: 16px !important;
   width: 100%;
   justify-content: center;
