@@ -482,24 +482,7 @@ footer {
 }
 
 /* ===== Responsive Design ===== */
-@media (max-width: 768px) {
-  .nav-links ul {
-    display: none;
-  }
 
-  .hero-content h1 {
-    font-size: 2rem;
-  }
-
-  .hero-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  section {
-    padding: var(--section-padding-mobile);
-  }
-}
 
 /* ===== Utility Classes ===== */
 .text-center {
@@ -551,7 +534,7 @@ footer {
 }
 
 .footer-bottom span {
-  color: #56bfc4 ;
+  color: #56bfc4;
   cursor: pointer;
   margin-right: var(--space-2);
 }
@@ -588,14 +571,7 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
 
-  .grid-2,
-  .grid-3,
-  .grid-4 {
-    grid-template-columns: 1fr;
-  }
-}
 
 /* ===== Inventor Section & Card ===== */
 .inventor-section {
@@ -603,9 +579,6 @@ footer {
   background: #0f172a;
 }
 
-.bg-dark {
-  background-color: #ffffff !important;
-}
 
 /* Fix for Inventor Cards Height Alignment */
 .flex-center {
@@ -616,7 +589,7 @@ footer {
 }
 
 .inventor-card {
-  background-color: var(--bg-light);
+  background-color: #ffffff;
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   padding: var(--card-padding);
@@ -624,7 +597,7 @@ footer {
 
   display: flex;
   justify-content: flex-start;
-  /* Align content to top */
+
   align-items: center;
   flex-direction: column;
   height: 100%;
@@ -639,7 +612,7 @@ footer {
   transform: translateY(-2px);
   transition: 0.3s;
   border-color: var(--border-color);
-  background: var(--bg-light);
+  background: #ffffff;
 }
 
 .justify-center {
@@ -654,9 +627,7 @@ footer {
   color: #333333 !important;
 }
 
-.bg-dark {
-  background-color: #ffffff !important;
-}
+
 
 .menu-toggle i {
   display: none;
@@ -685,28 +656,7 @@ i.fa-solid.fa-phone {
   align-items: stretch;
 }
 
-@media (max-width: 767px) {
-  .flex-Top {
-    flex-direction: column;
-    gap: var(--space-2);
-  }
 
-  .hero-content h1 {
-    font-size: 1rem;
-    padding: 0;
-    margin: 0 0 var(--space-2) 0;
-  }
-
-  .hero-content p {
-    font-size: 0.9rem;
-  }
-
-  .btn-large {
-    font-size: 0.9rem;
-    padding: var(--space-2);
-    transform: translateY(-25px);
-  }
-}
 
 .bottomo {
   width: 100%;
