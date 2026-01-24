@@ -343,19 +343,19 @@ transform: translateY(-5px);
 /* Mobile App Icon */
 .icon-mobile {
   background: rgba(30, 144, 255, 0.1);
-  border-radius: var(--radius-md);
+  border-radius:50%;
   position: relative;
 }
 
 .icon-mobile::before {
-  content: "";
-  position: absolute;
-  width: 70%;
-  height: 60%;
-  background: #56bfc4;
-  border-radius: 8px;
-  top: 15%;
-  left: 15%;
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 50%;
+    background: #56bfc4;
+    border-radius: 8px;
+    top: 21%;
+    left: 21%;
 }
 
 .icon-mobile::after {
@@ -372,7 +372,7 @@ transform: translateY(-5px);
 /* Section Headers */
 .section-header {
   text-align: center;
-  margin-bottom: var(--space-16);
+  margin-bottom: 60px;
   line-height: 0.9;
   transform: translateY(-5%);
 }
