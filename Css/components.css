@@ -24,13 +24,9 @@
   display: flex;
   flex-direction: column;
   line-height: 1.8;
-  padding: 0 var(--space-4) 0 0;
-  margin: 0;
-}
-
-#tech .card ul li i {
-  margin-left: 10px;
-  color: #56bfc4 !important;
+  transform: translateY(-5px);
+  padding: 0;
+    margin: 0 50px 0 0;
 }
 
 /* Center Content for Data Flow Only */
