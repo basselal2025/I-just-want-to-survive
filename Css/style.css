@@ -117,7 +117,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px var(--dark-color);
+  box-shadow: inset 0 0 6px #56bfc4;
 }
 
 ::selection {
@@ -136,7 +136,13 @@ li {
   list-style: none;
   line-height: 1.8;
 }
-
+ section .grid-3 .card ul li {
+     list-style: none;
+    line-height: 1.8;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+ }
 h1,
 h2,
 h3,
@@ -165,7 +171,7 @@ h4 {
 }
 
 p {
-  color: var(--text-light);
+
   line-height: 1.8;
   font-size: var(--font-p);
   margin-bottom: var(--space-2);
@@ -179,7 +185,7 @@ img {
 
 .inventor-card.animate-fadeInUp img {
   border-radius: 50%;
-  border: 2px solid var(--secondary-color);
+  border: 2px solid #56bfc4;
   width: 70px;
   height: 70px;
   object-fit: cover;
@@ -292,10 +298,7 @@ header {
   transform-origin: left;
 }
 
-.nav-links a:hover {
-  background: var(--dark-color);
-  box-shadow: 0 0 12px var(--secondary-color);
-}
+
 
 .nav-links .fa-magnifying-glass {
   color: var(--light-color);
@@ -347,15 +350,15 @@ header {
 }
 
 .hero-section::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  height: 40%;
-  background: #0713298c;
-  z-index: -1;
-  transform: translatey(-50%);
+    content: "";
+    position: absolute;
+
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #071329b3;
+    z-index: -1;
+
 }
 
 .hero-content {
@@ -488,20 +491,15 @@ footer {
 .working-hours {
   display: flex;
   flex-direction: column;
-  gap: var(--space-4);
+ gap: 12px;
   /* 16px gap */
 }
 
 .working-hours li {
   display: flex;
   align-items: center;
-  gap: var(--space-3);
+  gap: 8px;
   color: #b0b8c4;
-}
-
-.working-hours i {
-  font-size: 1.2rem;
-  color: #56bfc4;
 }
 
 .footer-bottom {
@@ -724,16 +722,14 @@ i.fa-solid.fa-phone {
 
 .bottomo {
   width: 100%;
-  padding: var(--space-4) var(--space-8);
-  border: none;
-  background: var(--dark-color);
-  color: #fff;
-  font-size: 1.1rem;
-  cursor: pointer;
-  border-radius: 10px;
-  transition: 0.3s;
-  font-weight: 600;
-  margin-top: 15px;
+  height: 50px;
+    margin-top: 15px;
+    border-radius: 18px;
+    background: linear-gradient(180deg, #4dabf7, #60d394);
+    color: #042027;
+    box-shadow: 0 8px 22px rgba(77, 171, 247, 0.18);
+    transform: translateY(-6px);
+    border: none;
 }
 
 .bottomo:hover {

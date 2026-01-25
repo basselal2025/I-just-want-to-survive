@@ -10,6 +10,7 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+      border: none;
 }
 
 /* Strict Spacing for Tech & Data Flow Section */
@@ -21,12 +22,14 @@
 
 /* Ensure List Items also follow the universal gap */
 #tech .card ul {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.8;
-  transform: none;
-  padding: 0;
-  margin: 0;
+    display: flex;
+    flex-direction: column;
+
+    transform: none;
+    padding: 0;
+    margin: 0;
+
+    align-items: flex-start;
 }
 
 /* Center Content for Data Flow Only */
@@ -98,15 +101,15 @@
 }
 
 .contact-info-card li {
-  display: flex;
-  align-items: center;
-  gap: var(--space-3);
-  padding: var(--space-2) var(--space-4);
-  background: white;
-  border-radius: var(--radius-sm);
-  box-shadow: var(--shadow-sm);
-  transition: var(--transition-normal);
-  border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-2) var(--space-4);
+    background: white;
+    border-radius: var(--radius-sm);
+
+    transition: var(--transition-normal);
+
 }
 
 .contact-info-card li:hover {
@@ -221,11 +224,13 @@
 }
 
 .btn-primary {
-  background: var(--gradient-overlay);
-  color: white;
-  border-radius: var(--radius-sm);
-  padding: var(--space-4) var(--space-8);
-  transition: background 0.3s ease;
+    margin-top: 30px;
+
+    border-radius: 18px;
+    background: linear-gradient(180deg, #4dabf7, #60d394);
+    color: #042027;
+    box-shadow: 0 8px 22px rgba(77, 171, 247, 0.18);
+    transform: translateY(-6px);
 }
 
 .btn-primary:hover {
