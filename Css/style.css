@@ -407,9 +407,9 @@ section:nth-child(even) {
 footer {
   background: var(--gradient-primary);
   color: var(--light-color);
-   padding: 50px 0 30px 0;  
+  padding: 50px 0 30px 0;
   position: relative;
-;
+  ;
 
 }
 
@@ -638,7 +638,7 @@ footer {
   flex-direction: column;
   height: 100%;
   /* Ensure card takes full height of the wrapper */
-  gap:10px;
+  gap: 10px;
   /* Universal 16px gap */
 }
 
@@ -660,7 +660,7 @@ footer {
 
 /* Fix Social Links Spacing (Remove extra margin, enforce gap) */
 .inventor-info .social-links {
-  margin-top: 10!important;
+  margin-top: 10 !important;
   gap: 16px !important;
   width: 100%;
   justify-content: center;
@@ -682,14 +682,14 @@ footer {
 }
 
 .justify-center i {
-    color: #56bfc4;
-    background: rgba(30, 144, 255, 0.1);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  color: #56bfc4;
+  background: rgba(30, 144, 255, 0.1);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .text-white {
@@ -723,8 +723,9 @@ i.fa-solid.fa-phone {
   grid-template-columns: repeat(3, 1fr);
   gap: var(--grid-gap);
   align-items: stretch;
-      margin-bottom: 5px;
+  margin-bottom: 5px;
 }
+
 
 
 
@@ -759,8 +760,8 @@ button,
 select {
   text-transform: none;
 }
-.social-links {
-    display: flex;
-    gap: 15px;
-}
 
+.social-links {
+  display: flex;
+  gap: 15px;
+}

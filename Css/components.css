@@ -24,9 +24,20 @@
   display: flex;
   flex-direction: column;
   line-height: 1.8;
-  transform: translateY(-5px);
   padding: 0;
-    margin: 0;
+  margin: 0;
+}
+
+#tech .section-header {
+  transform: none !important;
+}
+
+#tech .grid-3 {
+  margin-bottom: 0 !important;
+}
+
+#tech .card h3.text-center {
+  margin-top: 0 !important;
 }
 
 /* Center Content for Data Flow Only */
@@ -374,7 +385,7 @@
   text-align: center;
   margin-bottom: 60px;
   line-height: 0.9;
-  /* transform: translateY(-5%); */
+  transform: translateY(-5%);
 }
 
 .section-title {
