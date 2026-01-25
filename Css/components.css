@@ -23,10 +23,14 @@
 #tech .card ul {
   display: flex;
   flex-direction: column;
-    line-height: 1.8;
-transform: translateY(-5px);
-  padding: 0;
+  line-height: 1.8;
+  padding: 0 var(--space-4) 0 0;
   margin: 0;
+}
+
+#tech .card ul li i {
+  margin-left: 10px;
+  color: #56bfc4 !important;
 }
 
 /* Center Content for Data Flow Only */
@@ -136,16 +140,16 @@ transform: translateY(-5px);
 
 .contact-info-card .social-links a {
 
-    color: #56bfc4;
-    background: rgba(30, 144, 255, 0.1);
+  color: #56bfc4;
+  background: rgba(30, 144, 255, 0.1);
 
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 .contact-info-card .social-links a:hover {
@@ -291,10 +295,10 @@ transform: translateY(-5px);
 
 /* IoT Icon */
 .icon-iot {
-    border: 3px solid rgba(30, 144, 255, 0.1);
-    border-radius: 50%;
-    position: relative;
-    background: rgba(30, 144, 255, 0.1);
+  border: 3px solid rgba(30, 144, 255, 0.1);
+  border-radius: 50%;
+  position: relative;
+  background: rgba(30, 144, 255, 0.1);
 }
 
 .icon-iot::before {
@@ -323,39 +327,39 @@ transform: translateY(-5px);
 
 /* AI Brain Icon */
 .icon-ai {
-    background: rgba(30, 144, 255, 0.1);
-    border-radius: 50%;
-    position: relative;
+  background: rgba(30, 144, 255, 0.1);
+  border-radius: 50%;
+  position: relative;
 
 }
 
 .icon-ai::before {
-    content: "";
-    position: absolute;
-    width: var(--space-8);
-    height: var(--space-8);
-    background: #56bfc4;
-    border-radius: 50%;
-    top: var(--space-4);
-    left: var(--space-4);
+  content: "";
+  position: absolute;
+  width: var(--space-8);
+  height: var(--space-8);
+  background: #56bfc4;
+  border-radius: 50%;
+  top: var(--space-4);
+  left: var(--space-4);
 }
 
 /* Mobile App Icon */
 .icon-mobile {
   background: rgba(30, 144, 255, 0.1);
-  border-radius:50%;
+  border-radius: 50%;
   position: relative;
 }
 
 .icon-mobile::before {
-    content: "";
-    position: absolute;
-    width: 60%;
-    height: 50%;
-    background: #56bfc4;
-    border-radius: 8px;
-    top: 21%;
-    left: 21%;
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 50%;
+  background: #56bfc4;
+  border-radius: 8px;
+  top: 21%;
+  left: 21%;
 }
 
 .icon-mobile::after {
