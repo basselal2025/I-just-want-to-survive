@@ -718,13 +718,6 @@ i.fa-solid.fa-phone {
   color: var(--border-color) !important;
 }
 
-.grid-3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--grid-gap);
-  align-items: stretch;
-  margin-bottom: 5px;
-}
 
 
 
