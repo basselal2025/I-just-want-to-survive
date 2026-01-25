@@ -26,7 +26,7 @@
   line-height: 1.8;
   transform: translateY(-5px);
   padding: 0;
-    margin: 0 50px 0 0;
+    margin: 0;
 }
 
 /* Center Content for Data Flow Only */
@@ -374,7 +374,7 @@
   text-align: center;
   margin-bottom: 60px;
   line-height: 0.9;
-  transform: translateY(-5%);
+  /* transform: translateY(-5%); */
 }
 
 .section-title {
